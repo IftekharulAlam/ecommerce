@@ -136,12 +136,14 @@ https://templatemo.com/tm-559-zay-shop
     <!-- Start Contact -->
     <div class="container py-5">
         <div class="row py-5">
-            <form class="col-md-9 m-auto" method="post" role="form" action="register">
+            <form class="col-md-9 m-auto" method="post" role="form" action="register.html">
                 {%csrf_token%}
+               
                 <div class="row">
                     <div class="form-group col-md-6 mb-3">
+                        
                         <label for="inputname">User Name</label>
-                        <input type="text" class="form-control mt-1" id="user_name" name="user_name" placeholder="User Name">
+                        <input type="text" class="form-control mt-1" id="username" name="username" placeholder="User Name">   
                     </div>
                     <div class="form-group col-md-6 mb-3">
                         <label for="inputemail">Email</label>
@@ -158,11 +160,14 @@ https://templatemo.com/tm-559-zay-shop
                 </div>
                 <div class="mb-3">
                     <label for="inputsubject">Password</label>
-                    <input type="text" class="form-control mt-1" id="password1" name="password1" placeholder="Password">
+                    <input type="password" class="form-control mt-1" id="password1" name="password1" placeholder="Password">
                 </div>
                 <div class="mb-3">
                     <label for="inputsubject">Confirm Password</label>
-                    <input type="text" class="form-control mt-1" id="confirm_password" name="confirm_password" placeholder="Confirm Password">
+                    <input type="password" class="form-control mt-1" id="password2" name="password2" placeholder="Confirm Password">
+                    {%for message in messages%}
+                        <label>{{message}}</label>
+                    {%endfor%}
                 </div>
                
                 <div class="row">
