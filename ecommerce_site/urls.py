@@ -8,8 +8,8 @@ urlpatterns = [
     path('contact.html',views.toContact, name='contact'),
     path('shop.html', views.toShop, name='shop'),
     path('shop-single.html',views.toShopSingle, name='shopsingle'),
-    path('login', views.toLogin, name="login"),
-    path('register', views.toRegister, name="register")
+    path('login.html', views.toLogin, name="login"),
+    path('register.html', views.toRegister, name="register")
 
 
 ]

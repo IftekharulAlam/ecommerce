@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def toLogin(request):
-    return render(request, 'login.html')
+    return render(request, 'my.html')
 def toRegister(request):
     return render(request, 'register.html')
 def toShopSingle(request):
