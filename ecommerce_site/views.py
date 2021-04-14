@@ -1,6 +1,10 @@
 from django.shortcuts import render
 
 # Create your views here.
+def toLogin(request):
+    return render(request, 'login.html')
+def toRegister(request):
+    return render(request, 'register.html')
 def toShopSingle(request):
     return render(request,'shop-single.html')
 def toShop(request):
